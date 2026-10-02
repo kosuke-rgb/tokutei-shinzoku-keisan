@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>特定親族特別控除 計算ツール【令和8年分対応】大学生の子のバイト収入で親の控除はいくら？</title>
+<meta name="description" content="19歳〜22歳の子（大学生など）のバイト年収を入れるだけで、親が受けられる特定扶養控除・特定親族特別控除の額と、親の所得税への影響の目安が分かります。令和8年分（2026年）は年収197万円まで控除が残ります。令和7年分にも切り替え可能な無料ツールです。">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://webtools-labs.com/tokutei-shinzoku-keisan/">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2370765779014113" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NKK5TXCQEK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-NKK5TXCQEK');
+</script>
+<script>
+(function () {
+  var fired = false;
+  function fireOnce() {
+    if (fired) return;
+    fired = true;
+    if (typeof gtag === 'function') gtag('event', 'tool_used', { tool_name: document.title });
+  }
+  document.addEventListener('input', fireOnce, true);
+  document.addEventListener('change', fireOnce, true);
+})();
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f766e'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' fill='white' font-family='sans-serif'%3E%EF%BF%A5%3C/text%3E%3C/svg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="webtools-labs">
+<meta property="og:title" content="特定親族特別控除 計算ツール【令和8年分対応】">
+<meta property="og:description" content="大学生の子のバイト年収から、親が受けられる特定扶養控除・特定親族特別控除の額と所得税への影響が分かります。">
+<meta property="og:url" content="https://webtools-labs.com/tokutei-shinzoku-keisan/">
+<meta property="og:image" content="https://webtools-labs.com/tokutei-shinzoku-keisan/og-image.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="特定親族特別控除 計算ツール【令和8年分対応】">
+<meta name="twitter:description" content="大学生の子のバイト年収で、親の控除がいくら残るかすぐ分かる無料ツール。">
+<meta name="twitter:image" content="https://webtools-labs.com/tokutei-shinzoku-keisan/og-image.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "特定親族特別控除 計算ツール",
+  "url": "https://webtools-labs.com/tokutei-shinzoku-keisan/",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "description": "19歳〜22歳の子のバイト年収から、親が受けられる特定扶養控除・特定親族特別控除の額と親の所得税への影響の目安を計算できる無料ツール。",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "特定親族特別控除とは何ですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "令和7年度税制改正で新しくできた所得税の控除です。19歳以上23歳未満の子など（特定親族）のアルバイト収入が増えて扶養控除の対象から外れても、合計所得金額が123万円以下であれば、親などが収入に応じて段階的に控除を受けられます。いわゆる「大学生のバイトの壁」を緩和するための制度です。" }
+    },
+    {
+      "@type": "Question",
+      "name": "子どものバイト代がいくらまでなら、親は控除を満額（63万円）受けられますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "令和8年分（2026年）は、子の給与収入が約159万円（合計所得金額85万円）以下なら63万円の控除を満額受けられます。令和7年分（2025年）は約150万円以下です。それを超えると控除額が段階的に減り、令和8年分は約197万円（令和7年分は約188万円）を超えるとゼロになります。" }
+    },
+    {
+      "@type": "Question",
+      "name": "特定扶養控除と特定親族特別控除は何が違いますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "子の合計所得金額が扶養の所得要件以下（令和8年分は62万円以下、給与収入なら約136万円以下）なら従来どおり「特定扶養控除」(63万円)、それを超えて123万円以下なら「特定親族特別控除」(最大63万円・段階的に減少)の対象になります。どちらか一方だけが適用されます。" }
+    },
+    {
+      "@type": "Question",
+      "name": "税金の控除は満額でも、社会保険の扶養は大丈夫ですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "別の制度なので注意が必要です。19歳以上23歳未満の子が親の健康保険の扶養に入れるのは、2025年10月から年収150万円未満が目安です（交通費なども含む見込み年収で判定）。令和8年分は税金上は159万円まで控除が満額でも、社会保険の扶養は150万円で外れる可能性があるため、実質的には150万円が意識すべきラインになります。" }
+    },
+    {
+      "@type": "Question",
+      "name": "年齢はいつの時点で判定しますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "その年の12月31日時点の年齢で判定します。たとえば令和8年分なら、2026年12月31日時点で19歳以上23歳未満の人が対象です。" }
+    },
+    {
+      "@type": "Question",
+      "name": "控除を受けるにはどうすればいいですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "会社員の親であれば、年末調整で「給与所得者の特定親族特別控除申告書」（扶養控除等申告書とは別）を勤務先に提出します。年末調整で申告しなかった場合や自営業の場合は、確定申告で受けることができます。" }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://webtools-labs.com/" },
+    { "@type": "ListItem", "position": 2, "name": "特定親族特別控除 計算ツール" }
+  ]
+}
+</script>
+<style>
+:root {
+  --bg: #ffffff;
+  --surface-2: #f7f7f7;
+  --ink: #1a1a1a;
+  --muted: #767676;
+  --line: #e3e3e3;
+  --accent: #0f766e;
+  --best-bg: #f0f8f6;
+  --warn-bg: #fff7ed;
+  --warn-ink: #9a5b00;
+  --bad-bg: #fef2f2;
+  --bad-ink: #b91c1c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+.page { max-width: 720px; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+header.masthead { margin-bottom: 1.5rem; }
+h1 {
+  font-weight: 700;
+  font-size: clamp(1.4rem, 4.5vw, 1.7rem);
+  margin: 0 0 0.7rem;
+  letter-spacing: 0.01em;
+}
+p.lede { color: var(--muted); margin: 0; max-width: 60ch; font-size: 0.95rem; }
+.updated-note { display: block; margin-top: 0.9rem; font-size: 0.78rem; color: var(--muted); }
+
+.notice-box {
+  background: var(--warn-bg); color: var(--warn-ink); border-radius: 8px;
+  padding: 0.9rem 1.1rem; font-size: 0.85rem; margin-bottom: 2rem;
+}
+
+section { margin-bottom: 2.5rem; }
+h2 { font-size: 1.05rem; font-weight: 700; margin: 0 0 1rem; }
+
+.field-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem; }
+.field { flex: 1; min-width: 160px; }
+.field label { display: block; font-size: 0.83rem; color: var(--muted); margin-bottom: 0.35rem; }
+.field input[type="number"], .field select {
+  width: 100%; font-variant-numeric: tabular-nums; font-size: 1.05rem; font-family: inherit;
+  padding: 0.55rem 0.7rem; border: 1px solid var(--line); border-radius: 6px;
+  background: var(--bg); color: var(--ink);
+}
+.field input:focus, .field select:focus { outline: none; border-color: var(--accent); }
+
+.status-box { border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1.25rem; font-size: 0.92rem; }
+.status-box.ok { background: var(--best-bg); color: var(--ink); }
+.status-box.bad { background: var(--bad-bg); color: var(--bad-ink); }
+.status-box strong { font-size: 1.1rem; }
+
+.summary-cards { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; }
+.summary-card {
+  flex: 1; min-width: 180px; background: var(--surface-2); border-radius: 10px;
+  padding: 1rem 1.2rem;
+}
+.summary-card .label { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.3rem; }
+.summary-card .value { font-size: 1.4rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.summary-card .sub { font-size: 0.78rem; color: var(--muted); margin-top: 0.2rem; }
+
+table.compare { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+table.compare th, table.compare td {
+  padding: 0.55rem 0.5rem; text-align: right; border-bottom: 1px solid var(--line); vertical-align: top;
+}
+table.compare th:first-child, table.compare td:first-child { text-align: left; }
+table.compare thead th { color: var(--muted); font-weight: 500; font-size: 0.78rem; }
+table.compare td.num { font-variant-numeric: tabular-nums; }
+tr.total td { font-weight: 700; }
+tr.total { background: var(--best-bg); }
+
+.ref-table { overflow-x: auto; }
+.ref-table table { width: 100%; border-collapse: collapse; font-size: 0.86rem; min-width: 460px; }
+.ref-table th, .ref-table td { padding: 0.5rem 0.5rem; border-bottom: 1px solid var(--line); text-align: left; }
+.ref-table td.num { font-variant-numeric: tabular-nums; text-align: right; }
+.ref-table tr.highlight td { background: var(--best-bg); font-weight: 700; }
+.ref-table tr.dim td { color: var(--muted); }
+.ref-table-scroll { max-height: 420px; overflow-y: auto; }
+
+.disclaimer { font-size: 0.78rem; color: var(--muted); margin-top: 1rem; }
+
+.share-row { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.1rem; }
+.share-btn {
+  display: inline-flex; align-items: center; padding: 0.5rem 1rem; border-radius: 999px;
+  color: #fff; text-decoration: none; font-size: 0.82rem; font-weight: 700;
+}
+.share-btn:hover { opacity: 0.85; }
+.share-x { background: #000; }
+.share-line { background: #06c755; }
+.share-fb { background: #1877f2; }
+.share-hatena { background: #00a4de; }
+
+.ad-slot { margin: 2.5rem 0; text-align: center; min-height: 100px; }
+
+.pr-box {
+  border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 10px;
+  padding: 1.2rem 1.3rem; margin: 2.5rem 0; background: var(--best-bg);
+}
+.pr-box .pr-label {
+  display: inline-flex; align-items: center; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em;
+  color: #fff; background: var(--accent); border-radius: 999px;
+  padding: 0.2rem 0.7rem; margin-bottom: 0.8rem;
+}
+.pr-box p.pr-lede { color: var(--ink); font-size: 0.92rem; margin: 0 0 1rem; max-width: none; line-height: 1.7; }
+.pr-box .pr-banner { text-align: center; }
+.pr-box .pr-cta {
+  display: inline-block; background: var(--accent); color: #fff; font-weight: 700;
+  font-size: 0.85rem; padding: 0.6rem 1.3rem; border-radius: 999px; text-decoration: none;
+}
+.pr-box .pr-cta:hover { opacity: 0.85; }
+
+.contact-box textarea {
+  width: 100%; min-height: 6rem; font-family: inherit; font-size: 0.92rem;
+  padding: 0.7rem; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink);
+  resize: vertical; margin-bottom: 0.6rem;
+}
+.contact-box input[type="email"] {
+  width: 100%; font-family: inherit; font-size: 0.92rem;
+  padding: 0.6rem 0.7rem; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink);
+  margin-bottom: 0.6rem;
+}
+.contact-box textarea:focus, .contact-box input:focus { outline: none; border-color: var(--accent); }
+.contact-box button {
+  font-family: inherit; font-weight: 700; font-size: 0.9rem; padding: 0.6rem 1.4rem;
+  border: none; border-radius: 6px; background: var(--accent); color: #fff; cursor: pointer;
+}
+.contact-box button:disabled { opacity: 0.5; cursor: not-allowed; }
+.contact-status { font-size: 0.85rem; margin-top: 0.6rem; }
+.contact-status.ok { color: var(--accent); }
+.contact-status.err { color: #b91c1c; }
+
+footer.site-footer {
+  margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line);
+  font-size: 0.78rem; color: var(--muted);
+}
+footer.site-footer p { margin: 0 0 0.5rem; }
+footer.site-footer a { color: var(--accent); }
+
+.faq-item { border-bottom: 1px solid var(--line); padding: 0.9rem 0; }
+.faq-item:last-child { border-bottom: none; }
+.faq-item summary {
+  cursor: pointer; font-weight: 700; font-size: 0.92rem; list-style: none;
+  position: relative; padding-right: 1.6rem;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+'; position: absolute; right: 0; top: 0; color: var(--accent); font-weight: 700; font-size: 1.1rem;
+}
+.faq-item[open] summary::after { content: '−'; }
+.faq-item p { margin: 0.7rem 0 0; color: var(--muted); font-size: 0.88rem; }
+.breadcrumb { font-size: 0.78rem; color: var(--muted); margin-bottom: 1.1rem; }
+.breadcrumb a { color: var(--accent); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="page">
+  <nav class="breadcrumb" aria-label="パンくずリスト"><a href="https://webtools-labs.com/">ホーム</a> / 特定親族特別控除 計算ツール</nav>
+  <header class="masthead">
+    <h1>特定親族特別控除 計算ツール【令和8年分対応】</h1>
+    <p class="lede">19歳〜22歳の子（大学生など）のバイト年収を入れるだけで、親が受けられる控除の額と、親の所得税がどれくらい変わるかの目安が分かります。</p>
+    <span class="updated-note">制度情報 最終確認日: 2026年10月2日（国税庁タックスアンサーNo.1177・令和8年度税制改正にもとづく）</span>
+  </header>
+
+  <div class="notice-box">
+    ⚠️ 令和8年度税制改正で、扶養の所得要件が58万円から<strong>62万円</strong>に、給与所得控除の最低保障額が<strong>74万円</strong>（特例分を含む）に引き上げられました。そのため令和8年分（2026年）は、子の給与収入が<strong>約159万円まで控除が満額（63万円）</strong>、<strong>約197万円まで段階的に</strong>控除が残ります。本ツールは給与収入のみの場合の目安です。正確な適用は<a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1177.htm" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">国税庁「No.1177 特定親族特別控除」</a>・勤務先の年末調整担当でご確認ください。
+  </div>
+
+  <section>
+    <h2>特定親族特別控除とは？大学生のバイトの壁はどう変わったか</h2>
+    <p>これまで、大学生などの子のバイト代が一定額（いわゆる103万円）を超えると、親は「特定扶養控除」(63万円)をまるごと受けられなくなり、世帯の税負担が急に増えるという問題がありました。これを緩和するために令和7年度税制改正で創設されたのが「特定親族特別控除」です。子の収入が扶養の範囲を超えても、合計所得金額が123万円以下であれば、親は収入に応じて段階的に控除を受けられます。</p>
+    <p>さらに令和8年分からは、扶養の所得要件と給与所得控除の最低保障額が引き上げられたため、控除が満額残る子の年収の目安は<strong>約159万円</strong>、控除がゼロになる目安は<strong>約197万円</strong>になりました。ただし、親の健康保険の扶養（19〜22歳は年収150万円未満）は別の制度なので、税金だけを見て働く時間を増やすと、社会保険の扶養から外れてしまう点に注意が必要です。</p>
+  </section>
+
+  <section>
+    <h2>親が受けられる控除額を計算</h2>
+    <div class="field-row">
+      <div class="field">
+        <label for="salary">子のバイト年収（給与収入・円）</label>
+        <input type="number" id="salary" min="0" step="10000" value="1500000">
+      </div>
+      <div class="field">
+        <label for="taxYear">対象の年分</label>
+        <select id="taxYear">
+          <option value="r8">令和8年分（2026年1〜12月の収入）</option>
+          <option value="r7">令和7年分（2025年1〜12月の収入）</option>
+        </select>
+      </div>
+    </div>
+    <div class="field-row">
+      <div class="field">
+        <label for="ageGroup">子の年齢（その年の12月31日時点）</label>
+        <select id="ageGroup">
+          <option value="19to22">19歳〜22歳</option>
+          <option value="other">16〜18歳・23歳〜69歳</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="parentRate">親の所得税率（分からなければ10%）</label>
+        <select id="parentRate">
+          <option value="0.05">5%（課税所得195万円以下）</option>
+          <option value="0.10" selected>10%（195万円超330万円以下）</option>
+          <option value="0.20">20%（330万円超695万円以下）</option>
+          <option value="0.23">23%（695万円超900万円以下）</option>
+          <option value="0.33">33%（900万円超1,800万円以下）</option>
+          <option value="0.40">40%（1,800万円超4,000万円以下）</option>
+          <option value="0.45">45%（4,000万円超）</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="statusBox" class="status-box"></div>
+    <div class="summary-cards" id="summaryCards"></div>
+
+    <div style="overflow-x:auto">
+      <table class="compare">
+        <thead>
+          <tr><th>項目</th><th class="num">金額</th></tr>
+        </thead>
+        <tbody id="resultBody"></tbody>
+      </table>
+    </div>
+    <p class="disclaimer">子の合計所得金額は「給与収入 − 給与所得控除」で計算しています（給与以外の所得がない前提）。親の所得税への影響は「控除額 × 親の所得税率 × 1.021（復興特別所得税）」で計算した概算です。住民税にも同様の控除がありますが、控除額が異なるため含めていません。</p>
+    <div class="share-row" id="shareRow">
+      <a class="share-btn share-x" id="shareX" href="#" target="_blank" rel="noopener">𝕏でシェア</a>
+      <a class="share-btn share-line" id="shareLine" href="#" target="_blank" rel="noopener">LINEで送る</a>
+      <a class="share-btn share-fb" id="shareFb" href="#" target="_blank" rel="noopener">Facebookでシェア</a>
+      <a class="share-btn share-hatena" id="shareHatena" href="#" target="_blank" rel="noopener">はてブする</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>子の年収別 控除額の早見表（19〜22歳）</h2>
+    <div class="ref-table">
+      <table>
+        <thead><tr><th>子の合計所得金額</th><th class="num">給与収入の目安（令和8年分）</th><th class="num">給与収入の目安（令和7年分）</th><th class="num">親の控除額</th></tr></thead>
+        <tbody id="bandTableBody"></tbody>
+      </table>
+    </div>
+    <p class="disclaimer">合計所得金額が扶養の所得要件以下（令和8年分は62万円以下、令和7年分は58万円以下）の場合は「特定扶養控除」、それを超えて123万円以下の場合は「特定親族特別控除」になります。出典: <a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1177.htm" target="_blank" rel="noopener">国税庁 No.1177 特定親族特別控除</a></p>
+  </section>
+
+  <section>
+    <h2>計算例: 令和8年分・子のバイト年収150万円・親の所得税率10%の場合</h2>
+    <p>デフォルトで入力されている条件で計算してみます。</p>
+    <div class="ref-table">
+      <table>
+        <thead><tr><th>項目</th><th class="num">値</th></tr></thead>
+        <tbody>
+          <tr><td>子の給与収入</td><td class="num">1,500,000円</td></tr>
+          <tr><td>給与所得控除（最低保障額）</td><td class="num">▲740,000円</td></tr>
+          <tr><td>子の合計所得金額</td><td class="num">760,000円</td></tr>
+          <tr><td>適用される控除</td><td class="num">特定親族特別控除（62万円超85万円以下）</td></tr>
+          <tr class="total"><td>親の控除額</td><td class="num">630,000円（満額）</td></tr>
+          <tr><td>親の所得税の軽減額の目安（63万円×10%×1.021）</td><td class="num">約64,323円</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="disclaimer">年収150万円なら、税金の上では親の控除は満額のままです。一方、19〜22歳の社会保険の扶養は年収150万円<strong>未満</strong>が目安のため、ちょうど150万円以上になると親の健康保険の扶養から外れる可能性があります。シフトを増やす前に、社会保険の扶養のラインも確認しておきましょう。</p>
+  </section>
+
+  <div class="pr-box">
+    <span class="pr-label">次のステップ</span>
+    <p class="pr-lede">子ども本人の住民税・所得税や社会保険の扶養も含めた「扶養の壁」をまとめて確認したり、時給から月に何時間まで働けるかを逆算したりできます。</p>
+    <div class="pr-banner">
+      <a href="https://webtools-labs.com/fuyou-no-kabe-keisan/" class="pr-cta">扶養の壁チェッカー</a>
+      <a href="https://webtools-labs.com/jikyu-nenshu-keisan/" class="pr-cta" style="margin-left:0.6rem;">時給から年収・月収を計算</a>
+    </div>
+  </div>
+
+  <div class="ad-slot">
+    <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-2370765779014113"
+      data-ad-slot="3021985784"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <section>
+    <h2>よくある質問</h2>
+    <details class="faq-item">
+      <summary>特定親族特別控除とは何ですか？</summary>
+      <p>令和7年度税制改正で新しくできた所得税の控除です。19歳以上23歳未満の子など（特定親族）のアルバイト収入が増えて扶養控除の対象から外れても、合計所得金額が123万円以下であれば、親などが収入に応じて段階的に控除を受けられます。いわゆる「大学生のバイトの壁」を緩和するための制度です。</p>
+    </details>
+    <details class="faq-item">
+      <summary>子どものバイト代がいくらまでなら、親は控除を満額（63万円）受けられますか？</summary>
+      <p>令和8年分（2026年）は、子の給与収入が約159万円（合計所得金額85万円）以下なら63万円の控除を満額受けられます。令和7年分（2025年）は約150万円以下です。それを超えると控除額が段階的に減り、令和8年分は約197万円（令和7年分は約188万円）を超えるとゼロになります。</p>
+    </details>
+    <details class="faq-item">
+      <summary>特定扶養控除と特定親族特別控除は何が違いますか？</summary>
+      <p>子の合計所得金額が扶養の所得要件以下（令和8年分は62万円以下、給与収入なら約136万円以下）なら従来どおり「特定扶養控除」(63万円)、それを超えて123万円以下なら「特定親族特別控除」(最大63万円・段階的に減少)の対象になります。どちらか一方だけが適用されます。</p>
+    </details>
+    <details class="faq-item">
+      <summary>税金の控除は満額でも、社会保険の扶養は大丈夫ですか？</summary>
+      <p>別の制度なので注意が必要です。19歳以上23歳未満の子が親の健康保険の扶養に入れるのは、2025年10月から年収150万円未満が目安です（交通費なども含む見込み年収で判定）。令和8年分は税金上は159万円まで控除が満額でも、社会保険の扶養は150万円で外れる可能性があるため、実質的には150万円が意識すべきラインになります。</p>
+    </details>
+    <details class="faq-item">
+      <summary>年齢はいつの時点で判定しますか？</summary>
+      <p>その年の12月31日時点の年齢で判定します。たとえば令和8年分なら、2026年12月31日時点で19歳以上23歳未満の人が対象です。</p>
+    </details>
+    <details class="faq-item">
+      <summary>控除を受けるにはどうすればいいですか？</summary>
+      <p>会社員の親であれば、年末調整で「給与所得者の特定親族特別控除申告書」（扶養控除等申告書とは別）を勤務先に提出します。年末調整で申告しなかった場合や自営業の場合は、確定申告で受けることができます。</p>
+    </details>
+  </section>
+
+  <section class="contact-box">
+    <h2>ご意見・追加してほしい機能</h2>
+    <p class="lede" style="margin-bottom:0.9rem;">気づいたことや、あったら便利な機能があれば教えてください。</p>
+    <form id="contactForm">
+      <input type="email" id="contactEmail" placeholder="返信が必要な場合はメールアドレス（任意）">
+      <textarea id="contactMessage" placeholder="ご意見・ご要望をどうぞ" required></textarea>
+      <button type="submit" id="contactSubmit">送信する</button>
+      <p class="contact-status" id="contactStatus"></p>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <p>本ツールは、子の収入が給与収入のみの場合の目安を計算する簡易シミュレーターです。給与所得の計算では、年末調整で使う「給与所得控除後の給与等の金額の表」による端数調整を省略しています。親の所得税への影響は所得税率による概算で、住民税や他の控除との兼ね合いは含みません。正確な適用は国税庁・勤務先の担当窓口・税務署でご確認ください。</p>
+    <p>あわせて使える：
+      <a href="https://webtools-labs.com/frima-tesuryo-hikaku/">フリマ手数料計算・比較ツール</a> ／
+      <a href="https://webtools-labs.com/frima-hasso-hikaku/">フリマ配送方法・送料比較ツール</a> ／
+      <a href="https://webtools-labs.com/frima-tedori-simulator/">フリマ手取りシミュレーター</a> ／
+      <a href="https://webtools-labs.com/yukyu-hiyou-keisan/">有給休暇 付与日数計算ツール</a> ／
+      <a href="https://webtools-labs.com/revolving-risoku-keisan/">リボ払い・分割払い 実質利息計算ツール</a> ／
+      <a href="https://webtools-labs.com/taishoku-yukyu-keisan/">退職時の有給消化シミュレーター</a> ／
+      <a href="https://webtools-labs.com/fuyou-no-kabe-keisan/">扶養の壁チェッカー</a> ／
+      <a href="https://webtools-labs.com/tedori-keisan/">手取り計算ツール</a> ／
+      <a href="https://webtools-labs.com/taishokukin-zei-keisan/">退職金の税金計算ツール</a> ／
+      <a href="https://webtools-labs.com/taishokugo-hoken-hikaku-keisan/">退職後の健康保険 比較シミュレーター</a> ／
+      <a href="https://webtools-labs.com/sankyu-ikuji-teate-keisan/">産休・育休手当金シミュレーター</a> ／
+      <a href="https://webtools-labs.com/zangyodai-keisan/">残業代計算ツール</a> ／
+      <a href="https://webtools-labs.com/shitsugyo-hoken-keisan/">失業保険（基本手当）シミュレーター</a> ／
+      <a href="https://webtools-labs.com/jikyu-nenshu-keisan/">時給から年収・月収を計算</a> ／
+      <a href="https://webtools-labs.com/yubin-kitte-keisan/">郵便物の切手代早見表</a> ／
+      <a href="https://webtools-labs.com/bonus-tedori-keisan/">賞与手取り計算ツール</a> ／
+      <a href="https://webtools-labs.com/shoubyou-teate-keisan/">傷病手当金計算ツール</a> ／
+      <a href="https://webtools-labs.com/juminzei-keisan/">住民税計算ツール</a> ／
+      <a href="https://webtools-labs.com/tsukin-teate-keisan/">通勤手当の非課税限度額計算ツール</a> ／
+      <a href="https://webtools-labs.com/tedori-gyakusan-keisan/">手取りから逆算する年収計算ツール</a> ／
+      <a href="https://webtools-labs.com/shakaihoken-uchiwake-keisan/">給与の社会保険料 内訳計算ツール</a> ／
+      <a href="https://webtools-labs.com/fukugyo-shinkoku-keisan/">副業の確定申告 要否チェッカー</a> ／
+      <a href="https://webtools-labs.com/nencho-kanpu-keisan/">年末調整 還付金シミュレーター</a> ／
+      <a href="https://webtools-labs.com/iryouhi-koujo-keisan/">医療費控除 計算ツール</a> ／
+      <a href="https://webtools-labs.com/frima-kakuteishinkoku-checker/">フリマの確定申告 要否チェッカー</a> ／
+      <a href="https://webtools-labs.com/ideco-setsuzei-keisan/">iDeCo（確定拠出年金）節税シミュレーター</a> ／
+      <a href="https://webtools-labs.com/saitei-chingin-checker/">最低賃金チェッカー</a>
+    </p>
+    <p>当サイトは広告を掲載する場合があります。</p>
+    <p><a href="https://webtools-labs.com/about/">運営者情報</a> ／ <a href="https://webtools-labs.com/privacy/">プライバシーポリシー</a></p>
+  </footer>
+</div>
+
+<script>
+(function () {
+  function yen(n) { return Math.round(n).toLocaleString('ja-JP') + '円'; }
+  function man(n) { return (n / 10000).toLocaleString('ja-JP') + '万円'; }
+
+  // 年分ごとの前提（国税庁 No.1177、令和8年度税制改正：扶養の所得要件62万円・給与所得控除の最低保障額69万円＋特例5万円）
+  var YEARS = {
+    r8: { label: '令和8年分', minSalaryDeduction: 740000, dependentLimit: 620000 },
+    r7: { label: '令和7年分', minSalaryDeduction: 650000, dependentLimit: 580000 }
+  };
+  // 特定親族特別控除：[合計所得金額の上限, 控除額]（下限は扶養の所得要件）
+  var TOKUTEI_TABLE = [
+    [850000, 630000], [900000, 610000], [950000, 510000], [1000000, 410000], [1050000, 310000],
+    [1100000, 210000], [1150000, 110000], [1200000, 60000], [1230000, 30000]
+  ];
+
+  function salaryDeduction(salary, y) {
+    var d;
+    if (salary <= 1900000) d = 650000;
+    else if (salary <= 3600000) d = salary * 0.3 + 80000;
+    else if (salary <= 6600000) d = salary * 0.2 + 440000;
+    else if (salary <= 8500000) d = salary * 0.1 + 1100000;
+    else d = 1950000;
+    return Math.min(salary, Math.max(d, y.minSalaryDeduction));
+  }
+
+  function calc(salary, yearKey, ageGroup) {
+    var y = YEARS[yearKey];
+    var deduction = salaryDeduction(salary, y);
+    var income = Math.max(0, salary - deduction);
+    var kind = '控除なし', amount = 0, band = '';
+    if (ageGroup === '19to22') {
+      if (income <= y.dependentLimit) { kind = '特定扶養控除'; amount = 630000; band = man(y.dependentLimit) + '以下'; }
+      else {
+        var lower = y.dependentLimit;
+        for (var i = 0; i < TOKUTEI_TABLE.length; i++) {
+          if (income <= TOKUTEI_TABLE[i][0]) { kind = '特定親族特別控除'; amount = TOKUTEI_TABLE[i][1]; band = man(lower) + '超' + man(TOKUTEI_TABLE[i][0]) + '以下'; break; }
+          lower = TOKUTEI_TABLE[i][0];
+        }
+      }
+    } else if (income <= y.dependentLimit) {
+      kind = '一般の扶養控除'; amount = 380000; band = man(y.dependentLimit) + '以下';
+    }
+    return { deduction: deduction, income: income, kind: kind, amount: amount, band: band };
+  }
+
+  var salaryInput = document.getElementById('salary');
+  var taxYearSelect = document.getElementById('taxYear');
+  var ageGroupSelect = document.getElementById('ageGroup');
+  var parentRateSelect = document.getElementById('parentRate');
+  var statusBox = document.getElementById('statusBox');
+  var summaryCards = document.getElementById('summaryCards');
+  var resultBody = document.getElementById('resultBody');
+  var bandTableBody = document.getElementById('bandTableBody');
+  var shareX = document.getElementById('shareX');
+  var shareLine = document.getElementById('shareLine');
+  var shareFb = document.getElementById('shareFb');
+  var shareHatena = document.getElementById('shareHatena');
+
+  function setShareLinks(text, url) {
+    shareX.href = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(url);
+    shareLine.href = 'https://line.me/R/msg/text/?' + encodeURIComponent(text + '\n' + url);
+    shareFb.href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url) + '&quote=' + encodeURIComponent(text);
+    shareHatena.href = 'https://b.hatena.ne.jp/entry/panel/?url=' + encodeURIComponent(url) + '&title=' + encodeURIComponent(text);
+  }
+
+  function render() {
+    var salary = Math.max(0, Number(salaryInput.value) || 0);
+    var yearKey = taxYearSelect.value;
+    var ageGroup = ageGroupSelect.value;
+    var rate = Number(parentRateSelect.value);
+    var y = YEARS[yearKey];
+    var r = calc(salary, yearKey, ageGroup);
+    var full = ageGroup === '19to22' ? 630000 : 380000;
+    var taxSaving = r.amount * rate * 1.021;
+    var taxLost = (full - r.amount) * rate * 1.021;
+
+    if (r.amount === full) {
+      statusBox.className = 'status-box ok';
+      statusBox.innerHTML = '✅ 親は<strong>' + r.kind + '（' + man(r.amount) + '・満額）</strong>を受けられます。';
+    } else if (r.amount > 0) {
+      statusBox.className = 'status-box ok';
+      statusBox.innerHTML = '親は<strong>' + r.kind + '（' + man(r.amount) + '）</strong>を受けられます。満額(' + man(full) + ')と比べて控除が' + man(full - r.amount) + '減っています。';
+    } else {
+      statusBox.className = 'status-box bad';
+      statusBox.innerHTML = '⚠️ 子の合計所得金額が' + (ageGroup === '19to22' ? '123万円' : man(y.dependentLimit)) + 'を超えるため、親は扶養に関する控除を受けられません。';
+    }
+    if (ageGroup === '19to22' && salary >= 1500000) {
+      statusBox.innerHTML += '<br>※年収150万円以上は、親の健康保険（社会保険）の扶養から外れる可能性があります（19〜22歳の基準は年収150万円未満）。';
+    }
+
+    summaryCards.innerHTML =
+      '<div class="summary-card"><div class="label">親の控除額</div><div class="value">' + yen(r.amount) + '</div><div class="sub">' + r.kind + '</div></div>' +
+      '<div class="summary-card"><div class="label">親の所得税の軽減額</div><div class="value">' + (taxSaving > 0 ? '約' + yen(taxSaving) : '0円') + '</div><div class="sub">税率' + Math.round(rate * 100) + '%の場合の目安</div></div>' +
+      '<div class="summary-card"><div class="label">満額と比べた負担増</div><div class="value">' + (taxLost > 0 ? '約+' + yen(taxLost) : '0円') + '</div><div class="sub">親の所得税の増加の目安</div></div>';
+
+    resultBody.innerHTML =
+      '<tr><td>子の給与収入</td><td class="num">' + yen(salary) + '</td></tr>' +
+      '<tr><td>給与所得控除（' + y.label + '）</td><td class="num">▲' + yen(r.deduction) + '</td></tr>' +
+      '<tr><td>子の合計所得金額</td><td class="num">' + yen(r.income) + '</td></tr>' +
+      '<tr><td>適用される控除</td><td class="num">' + r.kind + (r.band ? '（合計所得' + r.band + '）' : '') + '</td></tr>' +
+      '<tr class="total"><td>親の控除額</td><td class="num">' + yen(r.amount) + '</td></tr>';
+
+    var shareText = '子どものバイト年収' + man(salary) + 'だと、親の控除は' + man(r.amount) + '（' + r.kind + '）でした（' + y.label + '）\n\n特定親族特別控除 計算ツール';
+    setShareLinks(shareText, 'https://webtools-labs.com/tokutei-shinzoku-keisan/');
+
+    // 早見表で、該当する行（令和8年分の区分）を強調
+    Array.prototype.forEach.call(bandTableBody.querySelectorAll('tr[data-hi]'), function (tr) {
+      var lo = Number(tr.getAttribute('data-lo')), up = Number(tr.getAttribute('data-hi'));
+      var hit = ageGroup === '19to22' && yearKey === 'r8' && r.income > lo && r.income <= up;
+      tr.className = hit ? 'highlight' : '';
+    });
+  }
+
+  // 早見表（合計所得の区分ごとに、令和8年分・令和7年分の給与収入の目安を併記）
+  var R8 = YEARS.r8, R7 = YEARS.r7;
+  var rows = ['<tr data-lo="-1" data-hi="' + R8.dependentLimit + '"><td>62万円以下（令和7年分は58万円以下）・特定扶養控除</td><td class="num">約' + man(R8.dependentLimit + R8.minSalaryDeduction) + '以下</td><td class="num">約' + man(R7.dependentLimit + R7.minSalaryDeduction) + '以下</td><td class="num">63万円</td></tr>'];
+  var lower = R8.dependentLimit;
+  TOKUTEI_TABLE.forEach(function (t, i) {
+    var r7lower = i === 0 ? R7.dependentLimit : lower;
+    var label = (i === 0 ? '62万円（令和7年分は58万円）' : man(lower)) + '超' + man(t[0]) + '以下';
+    rows.push('<tr data-lo="' + lower + '" data-hi="' + t[0] + '"><td>' + label + '</td>' +
+      '<td class="num">約' + man(lower + R8.minSalaryDeduction) + '超〜' + man(t[0] + R8.minSalaryDeduction) + '</td>' +
+      '<td class="num">約' + man(r7lower + R7.minSalaryDeduction) + '超〜' + man(t[0] + R7.minSalaryDeduction) + '</td>' +
+      '<td class="num">' + man(t[1]) + '</td></tr>');
+    lower = t[0];
+  });
+  rows.push('<tr class="dim"><td>123万円超</td><td class="num">約197万円超</td><td class="num">約188万円超</td><td class="num">0円</td></tr>');
+  bandTableBody.innerHTML = rows.join('');
+
+  [salaryInput, taxYearSelect, ageGroupSelect, parentRateSelect].forEach(function (el) {
+    el.addEventListener('input', render);
+    el.addEventListener('change', render);
+  });
+
+  render();
+
+  var WEB3FORMS_ACCESS_KEY = '4551c9fd-4327-4bd4-97e0-8b93d85fd077';
+  var contactForm = document.getElementById('contactForm');
+  var contactStatus = document.getElementById('contactStatus');
+  var contactSubmit = document.getElementById('contactSubmit');
+
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    contactSubmit.disabled = true;
+    contactStatus.textContent = '送信中...';
+    contactStatus.className = 'contact-status';
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        access_key: WEB3FORMS_ACCESS_KEY,
+        subject: '特定親族特別控除 計算ツールへのお問い合わせ',
+        email: document.getElementById('contactEmail').value || 'noreply@example.com',
+        message: document.getElementById('contactMessage').value
+      })
+    }).then(function (res) { return res.json(); }).then(function (data) {
+      contactSubmit.disabled = false;
+      if (data.success) {
+        contactStatus.textContent = '送信しました。ありがとうございます！';
+        contactStatus.className = 'contact-status ok';
+        contactForm.reset();
+      } else {
+        contactStatus.textContent = '送信に失敗しました。時間をおいて再度お試しください。';
+        contactStatus.className = 'contact-status err';
+      }
+    }).catch(function () {
+      contactSubmit.disabled = false;
+      contactStatus.textContent = '送信に失敗しました。時間をおいて再度お試しください。';
+      contactStatus.className = 'contact-status err';
+    });
+  });
+})();
+</script>
+</body>
+</html>
